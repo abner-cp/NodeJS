@@ -14,7 +14,7 @@ const deadpool = {
 // const apellido = deadpool.apellido;
 // const poder    = deadpool.poder;
 
-function imprimeHeroe({ nombre, apellido, poder, edad = 0 }) {
+function imprimeHeroe({ nombre, apellido, poder, edad = 0 }) { //desesctrucutra
     nombre = 'Fernando';
     console.log(nombre, apellido, poder, edad );
 }

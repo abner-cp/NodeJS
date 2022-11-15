@@ -1,3 +1,4 @@
+//object
 const empleados = [
     {
         id: 1,
@@ -27,7 +28,7 @@ const salarios = [
 const getEmpleado = ( id ) => {
 
     
-    return new Promise(( resolve, reject ) => {
+    return new Promise(( resolve, reject ) => { //cuerpo promesa
 
         const empleado = empleados.find( e => e.id === id )?.nombre;
 
@@ -38,7 +39,7 @@ const getEmpleado = ( id ) => {
 }
 
 const getSalario = () => {
-    return new Promise(( resolve, reject ) => {
+    return new Promise(( resolve, reject ) => { //cuerpo promesa
 
         const salario = salarios.find( s => s.id === id )?.salario;
 
@@ -69,6 +70,6 @@ getEmpleado(id)
         return getSalario( id ) 
     })
     .then( salario => console.log( 'El empleado:', nombre, 'tiene un salario de:', salario ))
-    .catch( err => console.log( err ) );
+    .catch( err => console.log( err ) ); //captura el error
 
 

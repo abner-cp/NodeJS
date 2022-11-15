@@ -1,4 +1,5 @@
 
+//declaraciones
 const nombre = 'Wolverine';
 
 if ( true ) {

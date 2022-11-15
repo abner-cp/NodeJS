@@ -1,4 +1,4 @@
-
+//template
 const nombre = 'Deadpool';
 const real = 'Wade Winston';
 
@@ -8,6 +8,7 @@ const template = `${ nombre } ${ real }`;
 console.log(normal);
 console.log(template);
 
+//cuerpo html
 const html = `
 <h1>Hola</h1>
 <p>Mundo</p>
